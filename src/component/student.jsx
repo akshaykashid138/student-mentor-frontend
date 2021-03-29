@@ -17,7 +17,7 @@ export class Student extends Component {
       }
 
     getStudents=async ()=>{
-        const {data}=await axios.get("http://localhost:4000/api/students")
+        const {data}=await axios.get("https://student-mentor-mern-app.herokuapp.com/api/students")
         if(data){
             console.log(data)
             this.setState({students:data})

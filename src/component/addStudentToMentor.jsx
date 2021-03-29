@@ -32,7 +32,7 @@ class AddStudentToMentor extends Component {
         }
         const id=this.props.match.params.id
         console.log(id)
-        let result=await axios.put(`http://localhost:4000/api/mentors/${id}/addStudents`,data)
+        let result=await axios.put(`https://student-mentor-mern-app.herokuapp.com/api/mentors/${id}/addStudents`,data)
         if(result.data){
             this.setState({message:result.data.message})
             this.setState({title:"", description:"", postCategory:""})

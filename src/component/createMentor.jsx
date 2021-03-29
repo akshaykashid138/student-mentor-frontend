@@ -31,7 +31,7 @@ class CreateMentor extends Component {
             name:name,
             email:email,
         }
-        let result=await axios.post("http://localhost:4000/api/mentors/createMentor",data)
+        let result=await axios.post("https://student-mentor-mern-app.herokuapp.com/api/mentors/createMentor",data)
         if(result.data){
             this.setState({message:result.data.message})
             this.setState({title:"", description:"", postCategory:""})

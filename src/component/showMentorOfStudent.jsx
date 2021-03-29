@@ -12,7 +12,7 @@ export class ShowMentorOfStudent extends Component {
     componentDidMount(){
         let id=this.props.match.params.id
         console.log("id",id)
-        axios.put(`http://localhost:4000/api/students/${id}/assignMentor`).then((res)=>{
+        axios.put(`https://student-mentor-mern-app.herokuapp.com/api/students/${id}/assignMentor`).then((res)=>{
         console.log(res)
           if(res.data){
              
