@@ -1,6 +1,8 @@
 import Student from './component/student'
 import Mentor from './component/mentor'
 import Navbar from './component/navbar'
+import Home from './component/home'
+import Footer from './component/footer'
 import CreateStudent from './component/createStudent'
 import CreateMentor from './component/createMentor'
 import AddStudentToMentor from './component/addStudentToMentor'
@@ -21,8 +23,8 @@ function App() {
       <Route path='/addStudentToMentor/:id' component={AddStudentToMentor} />
       <Route path='/showStudentsOfMentor/:id' component={ShowStudentsOfMentor} />
       <Route path='/showMentorOfStudent/:id' component={ShowMentorOfStudent} />
-
-
+      <Route path='/' exact component={Home} /> 
+      <Footer />
       </BrowserRouter>
       
     </div>
